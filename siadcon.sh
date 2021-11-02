@@ -8,13 +8,13 @@ then
         echo './siadcon.sh <list of domains>'
         exit 1
 fi
-echo 'Looking for Subdomains...'
+echo 'Looking for Subdomains>>>'
 
 while read line
 do
         for var in $line
         do
-                echo 'enumerating:' $var
+                echo 'Enumerating:' $var
 
                 subfinder -silent -d $var > out1
                 cat out1 >> subs1
@@ -28,13 +28,13 @@ done < $1
 
 sort -u subs1 subs2 > all_subs
 rm subs1 subs2
-echo 'saved subdomains to all_subs'
+echo 'Saved subdomains to all_subs'
 
-echo 'FINDING LIVE HOSTS...'
+echo 'Finding live hosts>>>'
 
 cat all_subs | httprobe > live_subs
-echo 'saved live hosts to live_subs'
-echo 'CHECKING FOR SUBDOMAIN TAKEOVER...'
+echo 'Saved live hosts to live_subs'
+echo 'Cheking for subdomain takeover>>>'
 
 subjack -w all_subs -a
 
