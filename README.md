@@ -4,7 +4,7 @@
 *useage*
 ./scon.sh <domains.txt>
 
-##Requirements 
+Requirements 
   * subjack
   * subfinder
   * assetfinder
