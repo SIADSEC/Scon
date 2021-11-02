@@ -5,10 +5,10 @@
 ./scon.sh <domains.txt>
 
 ##Requirements 
-  subjack
-  subfinder
-  assetfinder
-  httprobe
-You can install them using the install_requirements.sh file
+  * subjack
+  * subfinder
+  * assetfinder
+  * httprobe
+####You can install them using the install_requirements.sh file
 
   
