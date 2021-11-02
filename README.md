@@ -8,7 +8,7 @@
   * subjack
   * subfinder
   * assetfinder
-  * httprobe
+  * httprobe *
 ######*You can install them using the install_requirements.sh file*
 
   
