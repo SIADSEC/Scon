@@ -1,10 +1,12 @@
 # Scon
-## This is a subdomain enumeration and takeover automation script.
 
-*useage*
-./scon.sh <domains.txt>
+This is a subdomain enumeration and takeover automation script.
 
-Requirements 
+## Usage
+
+`./scon.sh <domains.txt>`
+
+### Requirements
   * subjack
   * subfinder
   * assetfinder
